@@ -22,7 +22,13 @@ lazy val root = (project in file(".")).
       )
     },
 
-    scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-encoding", "utf8")
+    scalacOptions ++= Seq("-unchecked", "-deprecation", "-feature", "-encoding", "utf8"),
+    
+    // sbt-assembly configuration
+    mainClass in assembly := Some("wowpgs.Main"),
+    test in assembly := {},
+    assemblyJarName in assembly := "wowp-gs.jar"
+
   )
 
 
