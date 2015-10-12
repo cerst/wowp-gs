@@ -15,7 +15,6 @@ lazy val root = (project in file(".")).
       Seq(
         "com.typesafe.akka" %% "akka-actor" % akkaVersion,
         "com.typesafe.akka" %% "akka-stream-experimental" % akkaStreamsVersion,
-        "io.scalac" %% "reactive-rabbit" % "1.0.2",
         // Logging: Akka SLF4J logger + logging backend
         "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
         "ch.qos.logback" % "logback-classic" % logbackVersion
